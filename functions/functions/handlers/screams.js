@@ -20,6 +20,7 @@ exports.getAllScreams = (req, res) => {
       return res.json(screams);
     })
     .catch((err) => {
+      console.log("oh shit")
       console.error(err);
       res.status(500).json({ error: err.code });
     });
